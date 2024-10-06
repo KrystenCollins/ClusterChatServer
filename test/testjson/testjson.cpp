@@ -7,9 +7,9 @@ using json = nlohmann::json;
 #include <string>
 using namespace std;
 
-
 // json序列化示例1
-string func1() {
+string func1()
+{
     json js;
     js["msg_type"] = 2;
     js["from"] = "zhang san";
@@ -22,7 +22,8 @@ string func1() {
 }
 
 // json序列化示例2
-string func2() {
+string func2()
+{
     json js;
     // 添加数组
     js["id"] = {1, 2, 3, 4, 5};
@@ -38,7 +39,8 @@ string func2() {
 }
 
 // json序列化示例3
-string func3() {
+string func3()
+{
     json js;
 
     // 直接序列化一个vector容器
@@ -60,7 +62,8 @@ string func3() {
     return js.dump();
 }
 
-int main() {
+int main()
+{
 
     // string recvBuf = func1();
     // // 数据的反序列化： json字符串 --> 反序列化 数据对象（看作容器，方便访问）
@@ -80,18 +83,19 @@ int main() {
     // cout << msgjs["zhang san"] << endl;
     // cout << msgjs["liu shuo"] << endl;
 
-    
     string recvBuf = func3();
     json jsbuf = json::parse(recvBuf);
 
     vector<int> vec = jsbuf["list"]; // js对象里的数据类型，直接放入vector容器当中
-    for (int& v : vec) {
+    for (int &v : vec)
+    {
         cout << v << " ";
     }
     cout << endl;
 
     map<int, string> mymap = jsbuf["path"];
-    for (auto& p : mymap) {
+    for (auto &p : mymap)
+    {
         cout << p.first << " " << p.second << endl;
     }
     cout << endl;
