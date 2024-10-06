@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/paie/C++Project/ClusterChatServer/build/src/server",
+  "command": "/usr/bin/g++  -I/home/paie/C++Project/ClusterChatServer/include -I/home/paie/C++Project/ClusterChatServer/include/server -I/home/paie/C++Project/ClusterChatServer/include/server/db -I/home/paie/C++Project/ClusterChatServer/include/server/model -I/home/paie/C++Project/ClusterChatServer/include/server/redis -I/home/paie/C++Project/ClusterChatServer/thirdpart -g -g -o CMakeFiles/ChatServer.dir/main.cpp.o -c /home/paie/C++Project/ClusterChatServer/src/server/main.cpp",
+  "file": "/home/paie/C++Project/ClusterChatServer/src/server/main.cpp"
+},
+{
+  "directory": "/home/paie/C++Project/ClusterChatServer/build/src/client",
+  "command": "/usr/bin/g++  -I/home/paie/C++Project/ClusterChatServer/include -I/home/paie/C++Project/ClusterChatServer/include/server -I/home/paie/C++Project/ClusterChatServer/include/server/db -I/home/paie/C++Project/ClusterChatServer/include/server/model -I/home/paie/C++Project/ClusterChatServer/include/server/redis -I/home/paie/C++Project/ClusterChatServer/thirdpart -g -g -o CMakeFiles/ChatClient.dir/main.cpp.o -c /home/paie/C++Project/ClusterChatServer/src/client/main.cpp",
+  "file": "/home/paie/C++Project/ClusterChatServer/src/client/main.cpp"
+}
+]
